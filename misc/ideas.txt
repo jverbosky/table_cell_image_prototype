@@ -1,0 +1,40 @@
+          <!-- dynamic images -->
+          <% rows.each do |row| %>
+          <tr>
+            <% row.each do |space| %>
+            <td class="board-td image"><%= space %></td>
+            <!-- use image class to resize images to cells -->
+            <!-- <td class="board-td image"><img src="/images/x.png"></td> -->
+            <% end %>
+          </tr>
+          <% end %>  
+------------------------------------------
+var table = document.getElementById("table_id");
+------------------------------------------
+console.log(table)
+
+<table id="table_id"
+  <tbody>
+    <tr>
+      <td class="board-td image">O</td>
+      <td class="board-td image"></td>
+      <td class="board-td image">O</td>
+      <td class="board-td image">X</td>
+      <td class="board-td image"></td>
+    </tr>
+    <tr>
+...
+
+------------------------------------------
+var cells = table.getElementsByTagName("td");
+
+var cell = cells[i];
+
+If cell.value == X then load x.png
+Else if cell.value == O then load x.png
+
+------------------------------------------
+
+function textToImage() {
+  
+}
